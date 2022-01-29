@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+</head>
+<body>
+    <article>
+        <head>
+            TIPOS DE ENTRADA
+        </head>
+    </article>
+    <h1> Input tipo texto. </h1>
+    <input type="text" 
+    name = "my_name"
+    placeholder="escribe tu nombre."/>
+    <h2> Input tipo numero. </h2>
+    <input type="number"
+    name = "my_numero"
+    placeholder="Ingrese su numero."/>
+    <h3>Input tipo email</h3>
+    <input type="email"
+    placeholder="Ingrese su email."
+    name="my_email"/>
+    <input type= "password"
+    placeholder="Ingrese su contraseña."
+    name="contraseña"/>
+    <h4> Input tipo submit</h4>
+    <input type = "submit"
+    value = "Enviar";/>
+    <h5>Input tipo fecha. </h5>
+    <input type = "date"/>
+    <h6>Input tipo hora.</h6>
+    <input type="time"/>
+    <h6>Input tipo hora local</h6>
+    <input  type = "datetime-local"/>
+    <article>
+        <h1>Inputs tipo file especiales.</h1>
+    </article>
+    <input type = "file"/>
+    <p>archivos solo pdf.</p>
+    <input type = "file" accept = "aplication/pdf"/>
+    <p> archivos solo imagen</p>
+    <input type ="file" accept ="image/*"/>
+    <p> archivos solo video</p>
+    <input type ="file" accept ="video/*"/>
+    <p> archivos solo audio</p>
+    <input type ="file" accept ="audio/*"/>
+    <article>
+        input especiales de formas.
+    </article>
+    <p> El checked funciona como opcion marcada por 
+        defecto, 
+        pero se puede dcambiar.</p>
+    <input type="radio" name = "name" /> opcion1
+    <br/>
+    <input type="radio" name = "name" /> opcion2
+    <br/>
+    <input type="radio" name = "name" /> opcion3
+    <article>
+        input del tipo box check
+    </article>
+    <input type = "checkbox" name="opcion_check[]"/> opcion multiple
+    <br/>
+    <input type = "checkbox" name="opcion_check[]"/> opcion multiple
+    <br/>
+    <input type = "checkbox" name="opcion_check[]"/> opcion multiple
+    <article>
+        Input del tipo color.
+    </article>
+    <input type = "color"/>
+    <article>
+        Input tipo rango.
+    </article>
+    <input type="range"/>
+    <article>
+        Input tipo botos de busqueda.
+    </article>
+    <input type = "search"/>
+    <article>
+        tipo numero telefonico.
+    </article>
+    <input type = "tel" />
+</body>
+</html>

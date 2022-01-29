@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <h1>Registro de personas. </h1>
+    <form>
+            Nombre:
+            <input type="text" placeholder="Ingrese su nombre." name="name" id="user_name"/>
+            <br/>
+            Apellido:
+            <input type="text" placeholder="Paterno y Materno." name="surname" id="user_surname"/>
+            <br/>
+            Correo electronico:
+            <input type="email" placeholder="example@gmial.com" name="email" id="user_email"/>
+            <br/>
+            Ingrese su contraseña:
+            <input type="password" minlength="4" maxlength="8"  placeholder="min 4 caracteres y maximo 8" name="contraseña" id="user_contraseña"/>
+            <br/>
+            Ingrese su numero de DNI:
+            <input type="number" minlength="8" name="DNI" id="user_dni" placeholder="8 caracteres."/>
+            <br>
+            Ingrese su sexo:
+            <br/>
+            <input type="radio" name="sexo"/> Masculino.
+            <input type="radio" name="sexo"/> Femenino
+            <input type="radio" name="sexo"/> Otros.
+            <br/>
+            vacuna contra el covid 19:
+            <br/>
+            <input type="checkbox" name="first"> Primera dosis.
+            <input type="checkbox" name="second"/> Segunda dosis.
+            <input type="checkbox" name="third"/> Tercera dosis.
+            <br/>
+            Seleccione su color favorito:
+            <br/>
+            <input type="color" name="color" id="user_color"/>
+            <br>
+            Ingrese su curriculum VITAE formato pdf:
+            <br/>
+            <input type="file" accept="aplication/pdf"/>
+            <br/>
+            <br/>
+            <input type="submit" value="Enviar"/>
+    </form>
+</body>
+</html>
