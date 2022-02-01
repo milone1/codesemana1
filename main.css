@@ -177,7 +177,7 @@ main .header span {
     font-family: monospace;
     white-space: nowrap;
     border-right: 4px solid;
-    width: 40ch;
+    width: 36ch;
     animation: typing 1s steps(20), 
     blink 0.5s infinite step-end alternate;
     overflow: hidden;
