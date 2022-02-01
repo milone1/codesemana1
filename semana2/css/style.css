@@ -1,0 +1,68 @@
+h1 {
+    background-color: black;
+    color: aqua;
+}
+h2 {
+    background-color: rgb(6, 245, 133);
+    color: blue;
+}
+body {
+    font-family: Helvetica;
+    color: black;
+}
+#contenedor1 {
+    background-color: yellow;
+}
+#contenedor2 {
+    background-color: violet;
+}
+.contenedores {
+    background-color: yellowgreen;
+}
+.btn-ingresar {
+    background-color: turquoise;
+    color: blue;
+    padding: 5px;
+    border-radius: 100;
+    border-bottom-color: violet;
+    font-size: 12px;
+}
+.btn-enviar {
+    color: black; 
+    font-size: 21px;
+}
+.contenedor-total {
+    background-color: violet;
+}
+.contenedorregistros {
+    border: 2px red solid;
+    padding: 20px;
+}
+.titulo-form {
+    background-color: #ffffff;
+    color: black;
+}
+.contenedor-form {
+    border-radius: 10px;
+    border: 3px solid aquamarine;
+    text-align: center;
+}
+.input-form {
+    padding: 10px;
+    border-radius: 50px;
+    width: 400;
+    border-color: red;
+}
+.btn-enviar2 {
+    border-radius: 25px;
+    background-color: aquamarine;
+    padding: 10px;
+    border: 2px red solid;
+}
+.btn-contenedor {
+    text-align: right;
+}
+
+.btn-ingresar1:hover {
+    color: red;
+}
