@@ -12,6 +12,12 @@ h1 {
   color: black;
 }
 
+li {
+  list-style: none;
+  border: 2px solid red;
+  width: 20px;
+  height: 20px;
+}
 .contenedor,
 .contenedor-dos, 
 .contenedor-tres,
@@ -26,11 +32,6 @@ h1 {
 
 }
 
-li {
-  list-style: none;
-  border: 2px solid red;
-  margin: 12px;
-}
 
 .contenedor-dos {
 
@@ -41,8 +42,12 @@ li {
   align-items: center;
 }
 
-.contenedor-cuatro {
-  align-items:baseline;
+.contenedor-cuatros {
+  display: flex;
+  height: 200px;
+  width: 90%;
+  border: 3px solid black;
+  align-items: baseline;
 }
 
 .contenedor-cinco {
@@ -59,7 +64,6 @@ li {
   height: 200px;
   width: 90%;
   display: flex;
-  justify-content: flex-start;
 }
 
 .conteiner-dos {
@@ -76,4 +80,27 @@ li {
 
 .conteiner-cinco {
   justify-content: space-around;
+}
+
+.conteiner-spacebetween {
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  width: 90%;
+  border: 3px solid black;
+}
+.item {
+  display: flex;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: aqua;
+  border: 2px solid blue;
+}
+.conteiner-spacearound {
+  display: flex;
+  justify-content: space-around;
+  height: 200px;
+  width: 90%;
+  border: 3px solid black;
 }
