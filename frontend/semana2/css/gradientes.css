@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;  
+}
+
+body {
+    font-family: monospace;
+}
+.gradientes {
+    height: 300px;
+    width: 300px;
+    background: radial-gradient(
+        red, 
+        yellow, 
+        rgb(30, 144, 255));
+    color:aliceblue;
+}
+.gradiente-dos {
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(
+        120deg,
+        pink,
+        yellow,
+        red
+    );
+    color: black;
+}

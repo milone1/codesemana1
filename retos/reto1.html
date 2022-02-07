@@ -1,60 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="title" content="RS | Frontend Mentor | NFT preview card component">
-<meta name="description" content="A portfolio project from Frontend Mentor made by Roy Schrauwen">
-<meta name="keywords" content="Portfolio, card, HTML, CSS">
-<meta name="robots" content="noindex, nofollow">
-<meta name="language" content="English">
-<meta name="author" content="Roy Schrauwen">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="reto1.css"/>
-  <link rel="icon" type="image/png" sizes="32x32" href="./imgreto1/favicon-32x32.png">
-  
-  <title>RS | Frontend Mentor | NFT preview card component</title>
-  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./retoscss/reto1.css">
+  <title>Reto nº1</title>
 </head>
 <body>
 
-<main>
   <div class="card">
 
-    <div class="card-top">
-      <img class="image" src="./imgreto1/image-equilibrium.jpg" width="302" height="302" alt="Equilibrium">
-      <div class="overlay">
-        <img src="./imgreto1/icon-view.svg" alt="Eye">
+    <div class="img">
+      <img src="./imgreto1/image-equilibrium.jpg" class="imgfirst" alt="">
+      <div class="imgoverlay">
+        <img src="./imgreto1/icon-view.svg" class="iconview" alt="">
       </div>
     </div>
 
-
-
-    <div class="card-bottom">
-      <h1>Equilibrium #3429</h1>
-
-      <p class="description">Our Equilibrium collection promotes balance and calm.</p>
-
-      <p class="stats">
-        <span class="eth">
-          <img src="./imgreto1/icon-ethereum.svg" width="11" height="18" alt="Ethereum icon">
-          0.041 ETH
-        </span>
-        <span class="time">
-          <img src="./imgreto1/icon-clock.svg" width="16" height="16" alt="Clock icon">
-          3 days left
-        </span>
-      </p>
-  
-      <hr class="line">
-
-      <p class="creator">
-        <img src="./imgreto1/image-avatar.png" height="33" width="33" alt="Jules Wyvern">
-        Creation of <span class="creator-name">Jules Wyvern</span>
-      </p>
+    <div class="conteiner-text">
+    <div class="title">
+    <h1>Equilibrium #3429</h1>
     </div>
 
+    <div class="text">
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+    </div>
   </div>
-</main>
+
+    <div class="buttoms">
+      <div class="diamond">
+        <img src="./imgreto1/icon-ethereum.svg" class="diamond-icon" alt="">
+        <h2 class="diamond-text">0.41 ETH</h2>
+      </div>
+      <div class="clock">
+        <img src="./imgreto1/icon-clock.svg" class="clock-icon" alt="">
+        <h2>3 days left</h2>
+      </div>
+    </div>
+
+    <hr>
+
+      <div class="creator">
+        <img src="./imgreto1/image-avatar.png" class="creator-icon"   alt="">
+        <h3>Creation of <span>Erick Milan </span></h3>
+      </div>
+      
+  </div>
 
 </body>
 </html>

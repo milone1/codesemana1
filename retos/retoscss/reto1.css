@@ -1,212 +1,173 @@
-
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --clr-primary-softblue: hsl(215, 51%, 70%);
-    --clr-primary-cyan: hsl(178, 100%, 50%);
-
-    --clr-neutral-mainbg: hsl(217, 54%, 11%);
-    --clr-neutral-cardbg: hsl(216, 50%, 16%);
-    --clr-neutral-line: hsl(215, 32%, 27%);
-    --clr-neutral-white: hsl(0, 0%, 100%);
-}
-
-html, body {
-    font-family: 'Outfit', sans-serif;
-}
-
-body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--clr-neutral-mainbg);
+    background-color: hsl(217, 54%, 11%);
 }
 
 .card {
-    margin: 1.5rem;
-    padding: 1.5rem;
-    background-color: var(--clr-neutral-cardbg);
-    border-radius: .9375rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
-    width: 20.4375rem;
-
+    background-color: hsl(216, 50%, 16%);
+    width: 22%;
+    border-radius: 10px;
+    margin: 50px auto;
+    padding-top: 20px;
+    height: 500px;
 }
 
-.card-top {
+.title {
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.text {
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(215, 32%, 27%);
+    color: hsl(215, 51%, 70%);
+    line-height: 1.4;
+    margin: 10px 0;
+}
+
+h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(215, 32%, 27%);
+    color: hsl(215, 51%, 70%);
+    line-height: 1.4;
+    margin: 10px 0;
+}
+
+hr {
+    border-top: 1px solid hsl(215, 32%, 27%);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin: 5px auto;
+}
+
+span {
+    color: white;
+}
+
+.img {
     position: relative;
+    max-width: 400px;
+    width: 85%;
+    margin: 0 auto;
 }
 
+.imgfirst {
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+    margin: auto;
+}
 
-.overlay {
-    transition: .4s ease;
+.imgoverlay {
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
     opacity: 0;
+    transition: .3s ease;
+    background-color: rgb(0, 255, 247, 0.5);
+}
+
+.iconview {
+    color: white;
+    font-size: 100px;
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     text-align: center;
-    background-color: var(--clr-primary-cyan);
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.5rem;
 }
 
-.image {
+.img:hover .imgoverlay {
     opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .4s ease;
-    height: 17.375rem;
-    width: 17.375rem;
 }
 
-.overlay:hover {
-    opacity: 0.5;
+.conteiner-text {
+    background-color: hsl(216, 50%, 16%);
+    width: 84%;
+    margin: 16px auto 0 auto;
 }
 
-.overlay:hover img {
-    opacity: 1;
-    z-index: 5;
+.title {
+    text-align: left;
 }
 
-.card-top img {
-    border-radius: .5rem;
-}
+ .title:hover {
+    color: hsl(178, 100%, 50%);
+ }
 
-h1 {
-    margin-top: 1.5rem;
-    font-weight: 600;
-    font-size: 1.375rem;
-    line-height: 1.75rem;
-    color: var(--clr-neutral-white);
-    margin-bottom: .75rem;
-}
-
-.description {
-    font-weight: 300;
-    font-size: 1.125rem;
-    line-height: 1.625rem;
-    color: var(--clr-primary-softblue);
-    margin-bottom: 1rem;
-}
-
-.stats {
+ .buttoms {
     display: flex;
+    width: 84%;
+    margin: 16px auto 0 auto;
+    justify-content: space-between;
+ }
+
+ .diamond {
+    display: flex;;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-}
+    gap: 5px;
+ }
 
-.eth {
+ .diamond-icon {
+    width: 8px;
+ }
+
+ .diamond-text {
+    color: hsl(178, 100%, 50%);
+    font-family: 'Outfit', sans-serif;
     font-weight: 600;
-    font-size: .9375rem;
-    line-height: 1.1875rem;
-    color: var(--clr-primary-cyan);
-    display: flex;
-}
+    font-size: 14px;
+ }
 
-.eth img {
-    margin-right: .405rem;
-}
-
-.time {
-    display: flex;
+ .clock {
+    display: flex;;
+    flex-direction: row;
     align-items: center;
-    justify-content: end;
-    font-size: .9375rem;
-    line-height: 1.1875rem;
-    color: var(--clr-primary-softblue);
-    
-}
+    gap: 5px;
+ }
 
-.time img {
-    margin-right: .4813rem;
-}
-
-.line {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    color: var(--clr-neutral-line);
-    border-top: 1px solid var(--clr-neutral-line);
-    background-color: var(--clr-neutral-line);
-    /* height:1px; */
-}
-
-.creator {
-    display: flex;
+ .clock-icon {
+    display: flex;;
+    flex-direction: row;
     align-items: center;
-    justify-content: start;
-    font-size: .9375rem;
-    line-height: 1.1875rem;
-    color: var(--clr-primary-softblue);
-}
+    gap: 5px;
+ }
 
-.creator img {
-    border: 1px solid var(--clr-neutral-white);
+ .creator {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    justify-content: center;
+ }
+
+ h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(215, 32%, 27%);
+    color: hsl(215, 51%, 70%);
+    line-height: 1.4;
+    margin: 10px 0;
+ }
+
+ .creator-icon {
+    width: 25px;
+    border: 1px solid white;
     border-radius: 50%;
-    margin-right: 1rem;
-}
-
-.creator-name {
-    margin-left: .3125rem;
-    color: var(--clr-neutral-white);
-}
-
-h1:hover, .creator-name:hover {
-    cursor: pointer;
-    color: var(--clr-primary-cyan);
-}
-
-
-@media only screen and (min-width: 500px) {
-    .card {
-        width: 21.875rem;
-        height: 37.25rem;
-        justify-content:flex-start;
-        
-    }
-
-
-    .card-bottom {
-        margin-top: 1.5rem;
-    }
-
-    .description {
-        margin-bottom: 1.5rem;
-    }
-
-    h1 {
-        margin-top: 0;
-        margin-bottom: 1rem;
-    }
-
-    .image {
-        height: 18.875rem;
-        width: 18.875rem;
-        
-    }
-
-    .line {
-        margin-top: 1.5rem;
-    }
-
-    .eth, .time, .creator {
-        font-size: 1rem;
-    }
-
-}
+    margin-right: 10px;
+ }
