@@ -178,10 +178,11 @@ main .header span {
     font-family: monospace;
     white-space: nowrap;
     border-right: 4px solid;
-    width: 36ch;
-    animation: typing 1s steps(20), 
-    blink 0.5s infinite step-end alternate;
+    width: 70ch;
+    animation: typing 3s steps(27), 
+    blink 1s infinite step-end alternate;
     overflow: hidden;
+    animation-iteration-count: infinite;
 }
 @keyframes typing {
     from { 
