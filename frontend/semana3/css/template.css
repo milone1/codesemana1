@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: monospace;
+}
+
+.header {
+    grid-area:header;
+    background: #000;
+}
+
+.izquierdo {
+    grid-area: nav;
+    background: red;
+}
+
+.principal {
+    grid-area: principal;
+    background: gray;
+}
+
+.footer {
+    grid-area: footer;
+    background: yellow;
+}
+
+.derecho {
+    grid-area: derecho;
+    background: aqua;
+}
+
+
+.contenedor {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "izquierdo principal derecho"
+    "footer footer footer";
+}
+
