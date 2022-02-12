@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 2 javascript.</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+    <p>
+        Los arrays son arreglos de objetos que pueden tener diferentes tipos de 
+        valores, ya sea, boleanos, numeros, caracteres, etc.
+    </p>
+    <p>
+        let array=["Juan", 12, true, "Maria"];
+        <br/>
+        este arreglo puede cambiar siempre en cuando sepamos el indice y para saber
+        el indice es necesario contar desde el 0.
+        <br>
+        Es decir para mostrar el elemento "Juan"
+        debemos poner el 0 como indice.
+        <br>
+        array[0]="Juan";
+        <br>
+        Asi como podemos mostrar el elemento mediante su indice tambien podemmos
+        modificarlo.
+        <br>
+        array[0] = "Erick";
+        array[1] = 14;
+        <br>
+        Esto mostrara: 
+        <br>
+        let array=["Erick", 14, true, "Maria"];
+    </p>
+
+    <h2>Arrays parte 2</h2>
+    <p>
+        Si queremos saber cuantos elementos posee nuestro array podemos usar 
+        la propiedad length.
+        <br>
+        ejemplo:
+        <br>
+        var ourArray = [1,2,3];
+        <br>
+        console.log("La cantidad de elementos dentro del array es de" , 
+        ourArray.length);
+        <br>
+        esto devolvera 3.
+        <br>
+        y para poder cambiar algun elemento solo es cuestion de restar 
+        -1 a esta propiedad.
+    </p>
+
+    <h1>Funciones:</h1>
+    <p>
+    es un objeto que realiza determinada accion dentro de un sistema.
+    en pocas palabras un objeto que le dices que hacer, como hacer y donde hacer.
+    </p>
+
+    <h2>Para poder crear una funion:</h2>
+    <p>
+        function nombre_de_la_funcion(Parametro o parametros){
+            <br>
+            Intruccion o linea de codigo la cual va a realizar.
+            <br>
+        }
+    </p>
+
+    <h3>Ejemplo de funcion.</h3>
+    <p>
+        function suma (num1, num2){
+            <br>
+            let c = num1 + num2;
+            console.log("La suma es de: ",c);
+        <br>
+    }
+    </p>
+</body>
+<script src="./js/dia2j.js"></script>
+</html>
