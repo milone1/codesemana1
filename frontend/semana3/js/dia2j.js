@@ -1,5 +1,8 @@
-function dividir (num1){
-    let a = num1 % 2 === 0 ? "par" : "impar";
-    console.log(a);
+function agregar(elemento){
+    let myArray=[];
+    myArray.push(elemento);
+    document.write(myArray);
 }
- dividir(12);
+agregar("perro");
+agregar(12);
+agregar(true);

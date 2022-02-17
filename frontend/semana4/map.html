@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAP</title>
+</head>
+<body>
+    <h1>MAP</h1>
+    <p>
+        crea un nuevo array con los resultados de la llamada 
+        a la función indicada aplicados a cada uno de 
+        sus elementos.
+    </p>
+
+    <p>
+        var numbers = [1, 5, 10, 15];
+        <br>
+var doubles = numbers.map(function(x) {
+    <br>
+   return x * 2;
+   <br>
+});
+<br>
+// doubles is now [2, 10, 20, 30]
+<br>
+// numbers is still [1, 5, 10, 15]
+<br>
+var numbers = [1, 4, 9];
+<br>
+var roots = numbers.map(function(num) {
+    <br>
+    return Math.sqrt(num);
+    <br>
+});
+<br>
+// roots is now [1, 2, 3]
+<br>
+// numbers is still [1, 4, 9]
+    </p>
+
+
+    <div>
+        var nuevo_array = arr.map(function callback(currentValue, index, array) {
+            <br>
+            // Elemento devuelto de nuevo_array
+            <br>
+        }[, thisArg])
+        <br>
+    </div>
+</body>
+<script src="./js/map.js"></script>
+</html>
