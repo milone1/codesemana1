@@ -178,8 +178,8 @@ main .header span {
     font-family: monospace;
     white-space: nowrap;
     border-right: 4px solid;
-    width: 70ch;
-    animation: typing 3s steps(27), 
+    width: 50ch;
+    animation: typing 3s steps(30), 
     blink 1s infinite step-end alternate;
     overflow: hidden;
     animation-iteration-count: infinite;

@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.conteiner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    background-color: red;
+    height: 100vh;
+}
+
+.box {
+    border: 1px solid black;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: (1fr,6);
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cajitas1,
+.cajitas2,
+.cajitas3,
+.cajitas4,
+.cajitas5,
+.cajitas6,
+.cajitas7,
+.cajitas8,
+.cajitas9 {
+    border:1px solid black;
+}
+
+.cajitas:hover {
+    border: 1px solid red;
+}
+
+.cajitas1 {
+    background-color: blueviolet;
+    border: 1px solid black;
+    grid-column: 1/4;
+}
+
+.cajitas2 {
+    background-color: blue;
+    grid-row: 2/6;
+}
+
+.cajitas3 {
+    grid-column: 2/4;
+}
+
+.cajitas4 {
+    grid-column: 3/4 ;
+}
+
+.cajitas5 {
+    grid-column: 2/4;
+}
+
+.cajitas6 {
+    grid-column: 3/4;
+}
+
+.cajitas7 {
+    background-color: darkcyan;
+    grid-column: 1/4;
+}
+
+.cajita1,
+.cajita2,
+.cajita3,
+.cajita4,
+.cajita5,
+.cajita6,
+.cajita7,
+.cajita8,
+.cajita9 {
+    border:1px solid black;
+}
+
+
+.cajita1 {
+    grid-column: 1/4;
+    background-color: blueviolet;
+}
+
+.cajita2 {
+    grid-column: 1/4;
+    grid-row: 2/5;
+}
+
+.cajita3 {
+    background-color: red;
+}
+
+.cajita4 {
+    background-color: yellowgreen;
+}
+
+.cajita5 {
+    background-color: bisque;
+}
+
+.cajitaone,
+.cajitatwo,
+.cajitatree,
+.cajitafour,
+.cajitafive,
+.cajitasix,
+.cajitaseven {
+    border:1px solid black;
+}
+
+.conteinercajitas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.cajitaone{
+    background-color: blueviolet;
+    grid-column: 1/4;
+}
+
+.cajitatwo {
+    grid-column: 1/4;
+    grid-row: 2/5;
+}
+
+.cajitatree {
+    width: 225px;
+    background-color: darkcyan;
+}
+
+.cajitafour{
+    width: 230px;
+    background-color:darkgrey ;
+}
+
+.cajitasone {
+    background-color: gray;
+}
+
+.cajitastwo {
+    border-radius: 50%;
+}
+
+.cajitastree {
+    border-radius: 50%;
+}
+
+.cajitasfour {
+    border-radius: 50%;
+}
+
+.cajitasfive {
+    border-radius: 50%;
+}
+.cajitassix {
+    border-radius: 50%;
+}
