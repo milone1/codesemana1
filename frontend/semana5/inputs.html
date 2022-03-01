@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUTS</title>
+</head>
+<body>
+    <h1>EVENTOS DE LOS INPUTS:</h1> 
+    <p>
+        evento onkeyUp: se activa cuando soltamos una tecla.
+        <br>
+        evento onkeyPress: se activa cuando presionamos una tecla.
+        <br>
+        evento onkeyDown: se activa mientras la tecla este presionada.
+    </p>
+    <h2>Eventos del click:</h2>
+
+    <h3>onclick</h3>
+    <p> Cucalquier etiqueta del html puede tener este evento.</p>
+    <h1 onclick="console.log(`click desde h1`);">click h1</h1>
+    <button onclick="console.log(`mi primer click`);">click</button>
+    <h3>onmouseover</h3>
+    <p>Es un evento que se envia mientras se pase el mouse sobre la etiqueta a la que se dio este atributo.</p>
+    <h2 onmouseover="console.log(`puse maouse sobre el h2`);"> onmouseover prueba</h2>
+    <p>
+        se pueden convinar eventos.
+    </p>
+    <h3>ondbdclick:</h3>
+    <p>
+        evento doble click.
+    </p>
+
+
+    <div>
+
+        <button onclick="this.style.color=`#f01`"> clickea</button>
+    </div>
+
+    <div>
+        <button onclick="imprimir()">clickJS</button>
+    </div>
+
+    
+    <script src="./js/eventos.js"></script>
+</body> 
+</html>

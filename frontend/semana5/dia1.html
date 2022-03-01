@@ -5,12 +5,211 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
+    <link rel="stylesheet" href="./css/dia1.css">
 </head>
 <body>
+    <center>EL DOM:</center>
+    <div class="conteiner">
+        <span>
+            <h3>
+                1.Crear el Elemento:
+            </h3>
+            <p>
+                var element = document.createElement("tag-name de la etiqueta.");
+            </p>
+            <h3>
+                2. Crear el textNode(contenido);
+            </h3>
+            <p>
+                var contenido = document.createTextNode("label-content");
+            </p>
+            <h3>
+                3. Agregar el contenido al elemento(appendChild=agregarHijo):
+            </h3>
+            <p>
+                element.appendChild(contenido);
+            </p>
+            <h3>
+                4. OPCIONAL, se puede agregar atributos al elemento.
+            </h3>
+            <p>
+                element.setAtributte("aling","center");
+            </p>
+            <h3>
+                5. agregar elementos al contenedor:
+            </h3>
+            <p>
+                document.getElementById("conteiner").appendChild(elemento);
+            </p>
+        </span>
+    </div>  
+    <h1><b> Diario el comercio. </b></h1>
 
-    <div id="titulo">
+    <div id="subtitulo">
 
     </div>
-    <script src="./dom.js"></script>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing 
+        elit. Cumque commodi laborum modi delectus earum 
+        voluptate neque adipisci velit autem est 
+        doloremque aspernatur iure 
+        tempore molestiae ipsam excepturi nulla, vitae non.
+    </p>
+
+    <div id="subtitulo-uno">
+
+    </div>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing 
+        elit. Cumque commodi laborum modi delectus earum 
+        voluptate neque adipisci velit autem est 
+        doloremque aspernatur iure 
+        tempore molestiae ipsam excepturi nulla, vitae non.
+    </p>
+
+    <div id="subtitulo-dos">
+
+    </div>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing 
+        elit. Cumque commodi laborum modi delectus earum 
+        voluptate neque adipisci velit autem est 
+        doloremque aspernatur iure 
+        tempore molestiae ipsam excepturi nulla, vitae non.
+    </p>
+
+    <div class="conteiner">
+        <h1>
+            <center>AGREGAR ELEMENTOS SABIENDO EL PADRE</center>
+        </h1>
+
+        <h1>
+            1. Crear el elemento:
+        </h1>
+        <p>
+            var element = document.createElement("tag-name");
+        </p>
+
+        <h1>
+            2. Crear su contenido:
+        </h1>
+        <p>
+            var contenido = document.createTextNode("ejemplo 0:");
+        </p>
+
+        <h1>
+            3. Añadir contenido al elemento:
+        </h1>
+        <p>
+            element.appendChild(contenido);
+        </p>
+
+        <h1>
+            4. Acceder al padre:
+        </h1>
+        <p>
+            var padre = document.getElementById("padre");
+            <br>
+            or //
+            <br>
+            var padre = document.getElementsByTagName("li").parentNode;
+            <br>
+            accedemos al li en la posicion 0, es decir el primer elemento y el .parentNode 
+            devuelve el padre es decir el ol (lista ordenada);
+        </p>
+    </div>
+
+    <div>
+        <ol id="lista-ordenada">
+            <li>ejemplo 1:</li>
+            <li>ejemplo 2:</li>
+            <li>ejemplo 3:</li>
+        </ol>
+
+        <p>
+            El ejemplo 0 fue insertado desde js. pero 
+            por defecto este sera colocado al ultimo, si queremos
+            situar al primer lado se hace lo siguiente:
+        </p>
+    </div>
+
+    <div class="conteiner">
+        <h1>
+            <center>AGREGAR ELEMENTOS SABIENDO EL PADRE AL PRINCIPIO</center>
+        </h1>
+        <h1>
+            1. Crear el elemento:
+        </h1>
+        <p>
+            var element = document.createElement("tag-name");
+        </p>
+
+        <h1>
+            2. Crear su contenido:
+        </h1>
+        <p>
+            var contenido = document.createTextNode("ejemplo 0:");
+        </p>
+
+        <h1>
+            3. Añadir contenido al elemento:
+        </h1>
+        <p>
+            element.appendChild(contenido);
+        </p>
+
+        <h1>
+            4. Acceder al padre:
+        </h1>
+        <p>
+            var padre = document.getElementById("padre");
+            <br>
+            or //
+            <br>
+            var padre = document.getElementsByTagName("li"[0]).parentNode;
+            <br>
+            accedemos al li en la posicion 0, es decir el primer elemento y el .parentNode 
+            devuelve el padre es decir el ol (lista ordenada);
+        </p>
+        <h1>
+            5. Crear una referencia del primer elemento:
+        </h1>
+        <p>
+            var firstElement = document.getElementByTagName("li")[0];
+            <br>
+            aca estamos accediendo al primer elemento dentro de una lo(lista ordenada)
+            , recordemos que el indice 0 devuelve el primer elemento.
+        </p>
+        <h1>
+            6. Agregar al documento:
+        </h1>
+        <p>
+            padre.insertBefore(elemnt, firstElement);
+            <br>
+            aca estamos agregando nuestro li dentro de una ol. 
+            el insertBefore(insertar, antes de):
+            insert(elemento)despues de (firstElement);
+        </p>
+    </div>
+
+    <div>
+        <ol id="clase-padre">
+            <li id="primer-hijo">ejemplo 1:</li>
+            <li>ejemplo 2:</li>
+            <li>ejemplo 3:</li>
+        </ol>
+
+        <p>
+            El ejemplo 0  fue insertado desde js,
+            conociendo la posicion del primer hijo se puede usar
+            (.insertBefore) o insertar(element) despues de (firstChild);
+
+        </p>
+    </div>
+
+    <script src="./js/dom.js"></script>
 </body>
 </html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+</head>
+<body>
+
+    <h1>Sweet Alert: </h1>
+
+    <p>
+        sweet alert es una libreria para modificar las alertas dentro de nuestra pagina,
+        <br>
+        haciendolas mas vistosas.
+    </p>
+    <br>
+
+    <h2>swal: basico</h2>
+    <button onclick="mostrar()">Mostrar</button>
+    <p>
+        Solo recibe el texto y lo muestra.
+        <br>
+        swal("hola mundo");
+    </p>
+
+    <h3>swal:medio</h3>
+    <button onclick="mostrarUno()">Mostrar</button>
+    <p>
+        recibe dos parametros.
+        <br>
+        swal("titulo", "contenido");
+    </p>
+
+    <h3>swal: avanzado</h3>
+    <button onclick="mostrarDos()">Mostrar </button>
+    <button onclick="mostrarDosUno()">Mostrar </button>
+    <p>
+        recibe tres parametros.
+        <br>
+        swal
+    </p>
+
+    <h1>Creacion de bootnes.</h1>
+
+    <h3>2 buttons</h3>
+    <button onclick="dosBotones()">Click Here</button>
+    <p>
+        swal("dos opciones?",{
+            <br>
+            buttons: ["ok","no"]
+            <br>
+        });
+    </p>
+
+    <h3>All swal</h3>
+    <button onclick="tercerBoton()">Click Here</button>
+    <p>
+        tambien se puede hacer como si fuese un objeto.
+        <br>
+        swal({
+            <br>
+            tittle: "encabezado",
+            <br>
+            text: "texto lorem lorem",
+            <br>
+            icon: "success",
+            <br>
+            buttons: ["ok","no"]
+            <br>
+        })
+    </p>
+
+    <script src="./js/sweet.js"></script>
+</body>
+</html>

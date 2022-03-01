@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/dia1.css">
+</head>
+<body>
+    <div>
+
+        <div class="conteiner">
+            <h1>
+                <center> MODIFICANDO</center>
+            </h1>
+            <h3>
+                1. Entrar al elemento mediante el ID, class o tag-Name, etc.
+            </h3>
+            <p>
+                var elemento = document.getElementById("primero");
+            </p>
+            <h3>
+                2. Modificar con innerHTML o textContent:
+            </h3>
+            <p>
+                elemento.innerHTMl = "new texto";
+                elemento.textContent = "new texto";
+            </p>
+            <p>
+                A simple vista estos dos parecen igual funcionan igual.
+                la principal diferencia es que .innerHTML lee etiquetas que esten dentro del texto,
+                textContent tambien los lee pero lo muestra como texto en blanco.
+                <br>
+                element.innerHTMl="este texto estara en <b>negrita</b>";
+                element.textConten = "este texto estara en < b> negrita < b>"
+            </p>
+        </div>
+
+
+        <h2>
+            CON innerHTML:
+        </h2>
+        <ol>
+            <li id="primero">Primer ejemplo</li>
+            <li>Segundo ejemplo</li>
+            <li>Tercer ejemplo</li>
+        </ol>
+        <h2> 
+            CON textConten:
+        </h2>
+        <ol>
+            <li id="first">Primer ejemplo</li>
+            <li>Segundo ejemplo</li>
+            <li>Tercer ejemplo</li>
+        </ol>
+
+        <div class="conteiner">
+            <h1>
+                <center>REEMPLAZAR </center>
+            </h1>
+            <h3>
+                1. Entrar al elemento padre:
+            </h3>
+            <p>
+                var padre = document.getElementById(etiqueta-padre);
+            </p>
+            <h3>
+                2. Usar replaceChild:
+            </h3>
+            <p>
+                padre.replaceChild(elemento-a-agregar, elementoa-a-reemplazar);
+            </p>
+            <p>
+                .replaceChild Recibe dos parametros.
+            </p>
+
+        </div>
+        <div>
+            <ol id ="etiqueta-padre">
+                <li id="reemplazar">1</li>
+                <li>2</li>
+                <li>3</li>
+            </ol>
+        </div>
+        <p>
+            En este ejemplo se reemplazo el elemento 4 por el 1 mediante el 
+            replaceChild.
+        </p>
+
+        <div class="conteiner">
+            <h1>
+                <center>ELIMINAR </center>
+            </h1>
+            <h3>
+                1. Entrar al elemento padre:
+            </h3>
+            <p>
+                var padre = document.getElementById(etiqueta-padre);
+            </p>
+            <h3>
+                2. Usar removeChild:
+            </h3>
+            <p>
+                padre.removeChild(etiquetaa-a-eliminar);
+            </p>
+            <p>
+                .removeChild recibe un parametro.
+            </p>
+        </div>
+
+        <div>
+            <ol id ="etiqueta-madre">
+                <li>1</li>
+                <li id ="eliminar">2</li>
+                <li>3</li>
+            </ol>
+        </div>
+        <p>
+            En este ejemplo se elimino el elemento 2 mediante js.
+        </p>
+
+    </div>
+
+    <script src="./js/dia2.js"></script>
+</body>
+</html>
