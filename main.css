@@ -21,6 +21,62 @@ body {
     box-shadow: 0 10px 20px 5px rgba(225,225,225,0.5);
     display: flex;
 }
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity  .6s;
+}
+
+.modal-show {
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity  .6s;
+}
+
+.imagen-whatsapp {
+    height: 90%;
+    width: 90%;
+}
+
+.modal-conteiner {
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: #0C131B;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+}
+
+.modal-close {
+    font-size: 1em;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #212E36;
+    padding: 1em 2em;
+    border: 1px solid;
+    border-radius: 20px;
+    transition: background-color .3s;
+    
+}
+
+.modal-close:hover {
+    color: black;
+    background-color: aliceblue;
+}
+
 .sidebar {
     background-color: rgba(225, 225, 225, 0.5);
     padding: 20px;
