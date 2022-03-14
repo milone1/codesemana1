@@ -35,7 +35,7 @@ const getData = async(numero = 550) => {
         }
 
     } catch (error){
-        alert(error);
+        alert(error.message);
     }
 }
 
