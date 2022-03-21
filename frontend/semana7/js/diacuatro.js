@@ -55,7 +55,3 @@ app.listen(3000, () => console.log("El servidor inicio"));
 // para entrar a ese podemos usar 2 formar
 // 1: locahost => http://localhost:3000/
 // 2: IP Local => 127.0.0.1:3000
-console.log("fncionando ");
-console.log("otro cambio");
-console.log("funciona increiblemente");
-console.log("soy el mas papi entre los papis x");
